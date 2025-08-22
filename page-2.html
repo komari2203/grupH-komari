@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/Logoshirt.png" alt="Logo" class="w-8 h-8" />
+          <span class="text-xl font-semibold">Shirt</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center gap-2">
+          <img src="../assets/Grid.png" />
+          <a href="#" class="text-gray-700 hover:text-black">Catalog</a>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search"
+              class="border border-gray-300 rounded-full px-6 py-2 w-64"
+            />
+          </div>
+        </nav>
+
+        <!-- Icons -->
+        <div class="flex items-center gap-8">
+          <button class="relative">
+           <img src="../assets/shopping-cart-01.png" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h18l-1 14H4L3 3z"
+              />
+          </button>
+          <!-- cart icon-->
+          <div class="flex items-center gap-2">
+          </button>
+
+            <!-- User Box -->
+            <div
+              class="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1"
+            >
+              <img src="../assets/user-01.png" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A4.992 4.992 0 0012 21a4.992 4.992 0 006.879-3.196M15 10a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              <span class="text-gray-700">Komar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main
+      class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-6"
+    >
+      <!-- FILTER SIDEBAR -->
+      <aside class="bg-white rounded-lg shadow p-6 md:col-span-1">
+        <h3 class="font-bold text-lg mb-4">FILTER</h3>
+
+        <!-- Categories -->
+        <div class="mb-6">
+          <h4 class="font-semibold mb-2">Categories</h4>
+          <div class="flex flex-col gap-2">
+            <label><input type="checkbox" checked /> All</label>
+            <label><input type="checkbox" /> Shoes</label>
+            <label><input type="checkbox" /> Clothes</label>
+            <label><input type="checkbox" /> Accessories</label>
+          </div>
+        </div>
+
+        <!-- Price -->
+        <div class="mb-6">
+          <h4 class="font-semibold mb-2">Price</h4>
+          <div class="flex flex-col gap-2">
+            <input
+              type="text"
+              placeholder="Minimum Price"
+              class="border border-gray-300 rounded px-3 py-2"
+            />
+            <input
+              type="text"
+              placeholder="Maximum Price"
+              class="border border-gray-300 rounded px-3 py-2"
+            />
+          </div>
+        </div>
+
+        <!-- Rating -->
+        <div>
+          <h4 class="font-semibold mb-2">Rating</h4>
+          <div class="flex flex-col gap-2">
+            <label><input type="checkbox" /> ⭐ 5</label>
+            <label><input type="checkbox" /> ⭐ 4</label>
+            <label><input type="checkbox" /> ⭐ 3</label>
+            <label><input type="checkbox" /> ⭐ 2</label>
+            <label><input type="checkbox" /> ⭐ 1</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- PRODUCT LIST -->
+      <section class="md:col-span-3">
+        <div class="flex items-center justify-between mb-6">
+          <p class="text-gray-500">Showing 160 products</p>
+          <div class="flex items-center gap-2">
+            <span>Sort:</span>
+            <select class="border border-gray-300 rounded px-3 py-2">
+              <option>Latest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grid Product -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Card Product -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/sepatuputih.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Sneakers Court Minimalis</h3>
+            <p class="text-lg font-bold text-gray-800">Rp275.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.9</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/crowneckblack.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Kaos Crewneck Esensial</h3>
+            <p class="text-lg font-bold text-gray-800">Rp800.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.8</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/tasselempangcoklat.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Tas Selempang Klasik</h3>
+            <p class="text-lg font-bold text-gray-800">Rp1.600.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.7</span>
+            </div>
+          </div>
+
+        
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/kaossofttouch.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Kaos Soft Touch</h3>
+            <p class="text-lg font-bold text-gray-800">Rp650.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.6</span>
+            </div>
+          </div>
+
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/jaketkrem.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Overshirt Utility</h3>
+            <p class="text-lg font-bold text-gray-800">Rp375.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.5</span>
+            </div>
+          </div>
+
+<div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/sweaterrajut.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Sweater Rajut Cable</h3>
+            <p class="text-lg font-bold text-gray-800">Rp1.300.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.8</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/syalwoll.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Syal Wol Kotak</h3>
+            <p class="text-lg font-bold text-gray-800">Rp220.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.9</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/syalwolsolid.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Syal Wol Solid</h3>
+            <p class="text-lg font-bold text-gray-800">Rp180.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.7</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/celanapanjangitem.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Celana Panjang Tailrod</h3>
+            <p class="text-lg font-bold text-gray-800">Rp2.200.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.8</span>
+            </div>
+          </div>
+
+            <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/sneakerharian.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Sneaker Harian</h3>
+            <p class="text-lg font-bold text-gray-800">Rp1.900.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.8</span>
+            </div>
+          </div>     
+          
+             <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/jaketmusimdingin.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Jaket Puffer Quilted</h3>
+            <p class="text-lg font-bold text-gray-800">Rp450.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.6</span>
+            </div>
+          </div>           
+
+             <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="./assets/kemejaoxfort.png"
+              alt="Product"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold">Kemeja Oxford</h3>
+            <p class="text-lg font-bold text-gray-800">Rp950.000</p>
+            <div class="flex items-center gap-1 text-yellow-500 mt-2">
+              ⭐ <span class="text-gray-600">4.8</span>
+            </div>
+        </div>               
+</div>  
+
+<div class="flex justify-center ">
+  <button class="border border-gray-400 rounded-md px-12 py-2 text-black font-semibold hover:bg-gray-200 transition"> Load More </button>
+</div>   
+
+<footer class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-12 lg:gap-x-24 gap-y-12 items-start">
+      <!-- Left: Logo, text, socials -->
+      <div class="md:col-span-6">
+        <div class="flex items-center gap-2 mb-4">
+          <!-- simple burst icon -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/Logoshirt.png" alt="Logo" class="w-8 h-8" />
+          <span class="text-xl font-semibold">Shirt</span>
+        </div>
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed max-w-md">
+          Explore a realm of style with our fashion e-commerce platform, where shopping is effortless.
+          Experience a smooth journey with an extensive selection of trendy apparel, all delivered directly to your home.
+        </p>
+
+        <p class="mt-6 text-sm font-semibold text-gray-900">Follow on Social Media</p>
+        <div class="mt-3 flex items-center gap-3">
+          
+          <!-- socials: circle outline, hover subtle -->
+            <!-- Facebook -->
+            
+            <img src="../assets/fb-icon.png"    
+           class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition"> 
+          
+            <!-- Instagram -->
+          <img src="../assets/Instagram-icon.png"    
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+
+            <!-- LinkedIn -->
+              <img src="../assets/In-icon.png" 
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+        
+            <!-- TikTok (simplified note) -->
+    <img src="../assets/tiktok-icon.png"    
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+        
+        
+        </div>
+      </div>
+
+      <!-- Middle: E-Commerce -->
+      <div class="md:col-span-3">
+        <h4 class="text-sm font-semibold text-gray-900 mb-4">E-Commerce</h4>
+        <ul class="space-y-1 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+          <li><a href="#" class="hover:text-gray-900">Terms &amp; Condition</a></li>
+          <li><a href="#" class="hover:text-gray-900">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Help -->
+      <div class="md:col-span-3">
+        <h4 class="text-sm font-semibold text-gray-900 mb-4">Help</h4>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-gray-900">How to Transact</a></li>
+          <li><a href="#" class="hover:text-gray-900">Payment Method</a></li>
+          <li><a href="#" class="hover:text-gray-900">How to Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+      </section>
+    </main>
+  </body>
+</html>

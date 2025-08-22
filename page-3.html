@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="border-b">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/Logoshirt.png" alt="Logo" class="w-8 h-8" />
+          <span class="text-xl font-semibold">Shirt</span>
+        </div>
+        <!-- Search Bar -->
+        <div
+          class="hidden md:flex items-center w-1/2 border rounded-lg overflow-hidden"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="flex-1 px-4 py-2 outline-none"
+          />
+          <button class="px-4 py-2 bg-gray-100">🔍</button>
+        </div>
+        <!-- Icons -->
+        <div class="flex items-center gap-8">
+          <button class="relative">
+           <img src="../assets/shopping-cart-01.png" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h18l-1 14H4L3 3z"
+              />
+          </button>
+
+          <!-- cart icon-->
+          <div class="flex items-center gap-2">
+          </button>
+
+            <!-- User Box -->
+            <div
+              class="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1"
+            >
+              <img src="../assets/user-01.png" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A4.992 4.992 0 0012 21a4.992 4.992 0 006.879-3.196M15 10a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              <span class="text-gray-700">Komar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+     <!-- BREADCRUMB -->
+  <nav class="max-w-7xl mx-auto px-6 py-3 text-sm text-gray-500">
+    Home / Detail / <span class="text-gray-900 font-medium">Sneakers Court Minimalis</span>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-17">
+    
+    <!-- LEFT: IMAGES -->
+    <div>
+      <img src="./assets/sepatuputih.png" alt="Sneaker" class="rounded-xl mb-4 w-3/4 h-3/4">
+      <div class="flex space-x-4">
+        <img src="./assets/sepatuputih.png" class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 transition" alt="">
+        <img src="./assets/sneakerfront.png" class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 transition" alt="">
+        <img src="./assets/sneakerleft.png" class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 transition" alt="">
+        <img src="./assets/sneakerright.png" class="w-w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 transition" alt="">
+        <img src="./assets/sneakerbottom.png" class="w-w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 transition" alt="">  
+      </div>
+    </div>
+    
+    <!-- RIGHT: INFO -->
+    <div>
+      <h1 class="text-3xl font-semibold mb-3">Sneakers Court Minimalis</h1>
+      <p class="text-3xl font-bold text-gray-800 mb-3">Rp275.000</p>
+      <div class="flex items-center space-x-2 mb-4 text-yellow-500">
+        <span>★</span>
+        <span class="text-gray-600 text-sm">4.9</span>
+      </div>
+
+      <!-- TABS -->
+      <div class="border-b mb-4 flex space-x-6 text-sm font-medium">
+        <button class="pb-2 border-b-2 border-black">Deskripsi</button>
+        <button class="text-gray-500 hover:text-gray-800">Spesifikasi</button>
+      </div>
+
+      <p class="text-gray-800 text-sm leading-relaxed mb-4whitespace-nowrap bg-gray-200" > 
+        <p>Sneakers Court Minimalis – Ivory Beige.  
+        Sepatu sneakers bergaya minimalis dengan kombinasi warna ivory dan beige yang elegan.Tdrbuat dari material kulit sintetis berkualitas dengan sentuhan suede halus dibagian panel samping dan depan.</p>
+
+        <p><li>Desain : Low-top dengan siluet klasik yang timeless</li></p>
+        <p><li>Material : Kulit sintetis premium + suede sintetis </li></p>
+        <p><li>Sol :OutSole karet anti slip dengan warna natural gum untuk daya cengekeram yang baik</li></p>
+        <p><li>Kenyamanan : Insole empuk dengan bantalan ekstra unutk pemakaian sehari hari </li></p>
+        <p><li>Warna: Ivory Beige </li></p>
+        <p><li>Gaya: Cocok untuk casual look, street style,maupun semi-formal </li></p> 
+    
+
+</div>
+      </p>
+    
+      <!-- Quantity -->
+      <div class="flex items-center space-x-4 mb-6 font-bold" >
+        <span class="text-sm">Quantity</span>
+        <div class="flex items-center border rounded-lg">
+          <button class="px-3 py-1 hover:bg-gray-100">-</button>
+          <span class="px-4">2</span>
+          <button class="px-3 py-1 hover:bg-gray-100">+</button>
+        </div>
+          <!-- Add to Cart -->
+       <div class="flex justify-center mt-4">
+         <button class="bg-black text-white font-semibold px-20 py-4 rounded-full hover:bg-black/80">
+        + Add to Cart
+      </button>
+       </div>
+         </div>
+  
+  <!-- RELATED PRODUCTS -->
+     <section class="max-w-7x1 mx-auto px-6">
+    <h2 class="text-xl font-semibold mb-4">Related Product</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full">
+      
+      <!-- Card -->
+      <div class="border rounded-xl p-4 hover:shadow-lg hover:-translate-y-2 transition transform duration-300 cursor-pointer">
+        <div class="overflow-hidden rounded-lg">
+          <img src="./assets/jaketkrem.png" alt="" class="rounded-lg hover:scale-110 transition duration-500">
+       <p class="font-medium mt-3">Overshirt Utility</p>
+        <p class="text-sm text-gray-700">Rp375.000</p>
+        <!-- <p class="text-yellow-500 text-sm">★ 4.6</p> -->
+        ⭐ <span class="text-gray-700">4.6</span>
+      </div>
+       </div>
+
+      <div class="border rounded-xl p-4 hover:shadow-lg hover:-translate-y-2 transition transform duration-300 cursor-pointer">
+        <div class="overflow-hidden rounded-lg">
+          <img src="./assets/sweaterrajut.png" alt="" class="rounded-lg hover:scale-110 transition duration-500">
+        </div>
+        <p class="font-medium mt-3">Sweater Rajut Cable</p>
+        <p class="text-sm text-gray-500">Rp1.300.000</p>
+          ⭐ <span class="text-gray-700">4.8</span>
+      </div>
+
+      <div class="border rounded-xl p-4 hover:shadow-lg hover:-translate-y-2 transition transform duration-300 cursor-pointer">
+        <div class="overflow-hidden rounded-lg">
+          <img src="./assets/syalwoll.png" alt="" class="rounded-lg hover:scale-110 transition duration-500">
+        </div>
+        <p class="font-medium mt-3">Syal Wol Kotak</p>
+        <p class="text-sm text-gray-500">Rp220.000</p>
+          ⭐ <span class="text-gray-700">4.0</span>
+      </div>
+
+      <div class="border rounded-xl p-4 hover:shadow-lg hover:-translate-y-2 transition transform duration-300 cursor-pointer">
+        <div class="overflow-hidden rounded-lg">
+          <img src="./assets/syalwolsolid.png" alt="" class="rounded-lg hover:scale-110 transition duration-500">
+        </div>
+        <p class="font-medium mt-3">Syal Wol Solid</p>
+        <p class="text-sm text-gray-500">Rp180.000</p>
+          ⭐ <span class="text-gray-700">4.7</span>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-12 lg:gap-x-24 gap-y-12 items-start">
+      <!-- Left: Logo, text, socials -->
+      <div class="md:col-span-6">
+        <div class="flex items-center gap-2 mb-4">
+          <!-- simple burst icon -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/Logoshirt.png" alt="Logo" class="w-8 h-8" />
+          <span class="text-xl font-semibold">Shirt</span>
+        </div>
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed max-w-md">
+          Explore a realm of style with our fashion e-commerce platform, where shopping is effortless.
+          Experience a smooth journey with an extensive selection of trendy apparel, all delivered directly to your home.
+        </p>
+
+        <p class="mt-6 text-sm font-semibold text-gray-900">Follow on Social Media</p>
+        <div class="mt-3 flex items-center gap-3">
+          
+          <!-- socials: circle outline, hover subtle -->
+            <!-- Facebook -->
+            
+            <img src="../assets/fb-icon.png"    
+           class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition"> 
+          
+            <!-- Instagram -->
+          <img src="../assets/Instagram-icon.png"    
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+
+            <!-- LinkedIn -->
+              <img src="../assets/In-icon.png" 
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+        
+            <!-- TikTok (simplified note) -->
+    <img src="../assets/tiktok-icon.png"    
+          class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-gray-300 hover:bg-gray-50 transition">
+        
+        
+        </div>
+      </div>
+
+      <!-- Middle: E-Commerce -->
+      <div class="md:col-span-3">
+        <h4 class="text-sm font-semibold text-gray-900 mb-4">E-Commerce</h4>
+        <ul class="space-y-1 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+          <li><a href="#" class="hover:text-gray-900">Terms &amp; Condition</a></li>
+          <li><a href="#" class="hover:text-gray-900">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Help -->
+      <div class="md:col-span-3">
+        <h4 class="text-sm font-semibold text-gray-900 mb-4">Help</h4>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-gray-900">How to Transact</a></li>
+          <li><a href="#" class="hover:text-gray-900">Payment Method</a></li>
+          <li><a href="#" class="hover:text-gray-900">How to Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
